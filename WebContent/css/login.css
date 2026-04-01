@@ -1,0 +1,141 @@
+body {
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    max-width: 500px; 
+    width: 90%;
+    padding: 30px;
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.login-header h1 {
+    font-weight: 700;
+    font-size: 2.8rem;  
+    margin-bottom: 10px;
+}
+
+.login-box {
+    padding: 0;
+}
+
+.alert-info {
+    background-color: #e2f3f7;
+    color: #2b4e55;
+    border-color: #c4e7ee;
+    border-radius: 8px;
+    font-size: 1.1rem; 
+    padding: 15px;
+}
+
+.form-control {
+    height: 55px; 
+    border-radius: 8px;
+    border: 1px solid #eceeef;
+    transition: all 0.3s;
+    font-size: 1.1rem; 
+}
+
+.form-control:focus {
+    border-color: #78c2ad;
+    box-shadow: 0 0 0 0.25rem rgba(120, 194, 173, 0.25);
+}
+
+.input-group-addon {
+    background-color: #f8f9fa;
+    border: 1px solid #eceeef;
+    border-radius: 8px 0 0 8px;
+    padding: 0 15px;
+}
+
+.input-group-addon .glyphicon {
+    font-size: 1.3rem; 
+}
+
+.btn-primary {
+    background-color: #78c2ad;
+    border-color: #78c2ad;
+    padding: 12px 35px; 
+    font-weight: 600;
+    font-size: 1.2rem; 
+    border-radius: 8px;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #609b8a;
+    border-color: #609b8a;
+    transform: translateY(-2px);
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;  
+    margin: 25px 0;
+}
+
+.radio label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem; 
+}
+
+.radio input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2); 
+}
+
+.glyphicon {
+    margin-right: 8px;
+    font-size: 1.2rem; 
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+        margin: 15px;
+        width: 95%;
+    }
+    
+    .login-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .radio-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+.form-container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.form-section {
+	margin-bottom: 20px;
+}
+
+.form-label {
+	font-weight: 500;
+	margin-bottom: 8px;
+	display: block;
+}
+
+.required-field::after {
+	content: " *";
+	color: #dc3545;
+}
+
+.submit-btn-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.submit-btn {
+	padding: 10px 20px;
+	font-size: 16px;
+}
+
+.date-picker {
+	position: relative;
+}
+
+.date-picker .input-group-addon {
+	cursor: pointer;
+}
+.img-thumbnail {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.img-thumbnail:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}

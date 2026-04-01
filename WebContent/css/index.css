@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2980b9;
+  --accent-color: #e74c3c;
+  --light-bg: #f8f9fa;
+  --dark-text: #2c3e50;
+  --green-primary: #78c2ad; 
+  --green-secondary: #609b8a; 
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--dark-text);
+  background-color: #f5f5f5;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: var(--primary-color) !important;
+}
+
+.navbar {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background: white !important;
+}
+
+.navbar-brand img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.ch-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+/* 左侧菜单 */
+.sidebar-nav {
+  background: var(--green-primary);
+  min-height: 100vh;
+  padding: 0;
+}
+
+.nav-pills .nav-link {
+  color: rgba(255,255,255,0.9);
+  border-radius: 0;
+  padding: 12px 20px;
+  margin: 2px 0;
+  transition: all 0.3s;
+}
+
+.nav-pills .nav-link:hover {
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+.nav-pills .nav-link.active {
+  background: var(--green-secondary);
+  color: white;
+}
+
+.nav-pills .nav-link i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+  color: rgba(255,255,255,0.8);
+}
+
+.nav-header {
+  color: rgba(255,255,255,0.7);
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.box {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.box-header {
+  background: var(--primary-color);
+  color: white;
+  border-bottom: none;
+}
+
+.box-header h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.box-content {
+  padding: 20px;
+}
+
+.welcome-message h1 {
+  color: var(--primary-color);
+  font-weight: 300;
+}
+
+.welcome-message h1 small {
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+  padding: 8px 15px;
+}
+
+.footer {
+  background: var(--dark-text);
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 50;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .sidebar-nav {
+    min-height: auto;
+  }
+  
+  .ch-container {
+    margin: 0;
+    border-radius: 0;
+  }
+}

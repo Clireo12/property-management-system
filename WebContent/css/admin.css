@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.form-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.form-section {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 16px;
+}
+
+.required-field::after {
+    content: " *";
+    color: #dc3545;
+}
+
+.submit-btn-container {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    min-width: 150px;
+}
+
+.form-control-lg {
+    padding: 12px 15px;
+    font-size: 16px;
+    height: auto;
+}
+
+.form-check {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.form-check-input {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.form-check-label {
+    font-size: 16px;
+}
+
+.form-text.text-muted {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #6c757d;
+}
